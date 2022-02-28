@@ -1,0 +1,82 @@
+/* CONFIGURACIONES GENERALES ================================ */
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s;
+}
+body {background: #b4b4b4;}
+
+:focus {
+    outline: none;
+}
+
+/* FORM LOGIN ================================ */
+
+.login, .register {
+    width: 20%;
+    padding: 1%;
+    box-shadow: 1px solid #808080;
+    background: #fff;
+    text-align: center;
+
+    h1 {
+        font-size: 35px;
+        padding-bottom: 5%; 
+        color: #66A80F;
+    }
+
+    p {
+        font-size: 20px;
+        margin-bottom: 5%;
+        
+        a{
+            font-weight: 500;
+            color: blue;
+
+            &:focus {
+                color: #000;
+            }
+        }
+    }
+}
+
+.login_form, .register_form {
+    margin: 1%;
+    padding: 1%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    text-align: center;
+
+    input {
+        margin-bottom: 8%;
+        font-size: 20px;
+        padding: 5%;
+        width: 70%;
+        border: 1px solid #808080;
+        border-radius: 30px;
+        
+        &::placeholder{
+            color: #999999;
+        }
+
+        &[type="button"]{
+            width: 80%;
+            background: #66A80F;
+            color: #fff;
+
+            &:hover {
+                background: #6f973b;
+                cursor: pointer;
+            }
+        }
+    }
+
+}
+
+.icon {
+    font-size: 60px;
+    color: #ff0000;
+}

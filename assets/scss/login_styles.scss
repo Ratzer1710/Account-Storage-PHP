@@ -1,0 +1,130 @@
+/* GENERAL STYLES ================================ */
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s;
+}
+
+*:focus {
+    outline: none;
+}
+
+body {
+    background: #b4b4b4;
+}
+
+a {
+    font-weight: 500;
+    color: blue;
+    text-decoration: none;
+    &:focus {
+        color: #000;
+    }
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+/* FORM STYLES ================================ */
+
+.login, .register, .verify {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    padding: 1%;
+    box-shadow: 1px solid #808080;
+    background: #fff;
+    text-align: center;
+    h1 {
+        font-size: 35px;
+        padding-bottom: 5%;
+    }
+    p {
+        font-size: 20px;
+        margin: 1%;
+    }
+}
+
+.header {
+    h1 {
+        padding-bottom: 1%;
+    }
+    p {
+        font-size: 25px;
+        margin-bottom: 3%;
+    }
+    a {
+        font-weight: 1000;
+        color: #66A80F;
+        text-decoration: none;
+        cursor: pointer;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.login_form, .register_form, .verify_form {
+    margin: 1%;
+    padding: 1%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    text-align: center;
+    input {
+        margin-bottom: 4%;
+        font-size: 20px;
+        padding: 3%;
+        width: 60%;
+        border: 1px solid #eee;
+        border-radius: 30px;
+        &::placeholder {
+            color: #999;
+        }
+    }
+}
+
+.btn {
+    background: #66A80F;
+    color: #fff;
+    &:hover {
+        background: #6f973b;
+        cursor: pointer;
+    }
+}
+
+input[type="submit"] {
+    width: 66.5%;
+    margin-bottom: 1%;
+}
+
+.message {
+    margin-bottom: 3%;
+    color: #fc3d3d;
+    p {
+        font-size: 20px;
+    }
+    .icon {
+        font-size: 25px;
+        position: relative;
+        top: 4px;
+    }
+}
+
+.icon {
+    font-size: 60px;
+    color: #ff0000;
+}
+
+#resend_email {
+    outline: none;
+    border: none;
+    background: none;
+    color: blue;
+    font-size: 20px;
+    cursor: pointer;
+}

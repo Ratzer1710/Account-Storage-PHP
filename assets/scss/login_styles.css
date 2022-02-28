@@ -1,0 +1,161 @@
+/* GENERAL STYLES ================================ */
+* {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  background: #b4b4b4;
+}
+
+a {
+  font-weight: 500;
+  color: blue;
+  text-decoration: none;
+}
+
+a:focus {
+  color: #000;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* FORM STYLES ================================ */
+.login, .register, .verify {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 40%;
+  padding: 1%;
+  -webkit-box-shadow: 1px solid #808080;
+          box-shadow: 1px solid #808080;
+  background: #fff;
+  text-align: center;
+}
+
+.login h1, .register h1, .verify h1 {
+  font-size: 35px;
+  padding-bottom: 5%;
+}
+
+.login p, .register p, .verify p {
+  font-size: 20px;
+  margin: 1%;
+}
+
+.header h1 {
+  padding-bottom: 1%;
+}
+
+.header p {
+  font-size: 25px;
+  margin-bottom: 3%;
+}
+
+.header a {
+  font-weight: 1000;
+  color: #66A80F;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.header a:hover {
+  text-decoration: underline;
+}
+
+.login_form, .register_form, .verify_form {
+  margin: 1%;
+  padding: 1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.login_form input, .register_form input, .verify_form input {
+  margin-bottom: 4%;
+  font-size: 20px;
+  padding: 3%;
+  width: 60%;
+  border: 1px solid #eee;
+  border-radius: 30px;
+}
+
+.login_form input::-webkit-input-placeholder, .register_form input::-webkit-input-placeholder, .verify_form input::-webkit-input-placeholder {
+  color: #999;
+}
+
+.login_form input:-ms-input-placeholder, .register_form input:-ms-input-placeholder, .verify_form input:-ms-input-placeholder {
+  color: #999;
+}
+
+.login_form input::-ms-input-placeholder, .register_form input::-ms-input-placeholder, .verify_form input::-ms-input-placeholder {
+  color: #999;
+}
+
+.login_form input::placeholder, .register_form input::placeholder, .verify_form input::placeholder {
+  color: #999;
+}
+
+.btn {
+  background: #66A80F;
+  color: #fff;
+}
+
+.btn:hover {
+  background: #6f973b;
+  cursor: pointer;
+}
+
+input[type="submit"] {
+  width: 66.5%;
+  margin-bottom: 1%;
+}
+
+.message {
+  margin-bottom: 3%;
+  color: #fc3d3d;
+}
+
+.message p {
+  font-size: 20px;
+}
+
+.message .icon {
+  font-size: 25px;
+  position: relative;
+  top: 4px;
+}
+
+.icon {
+  font-size: 60px;
+  color: #ff0000;
+}
+
+#resend_email {
+  outline: none;
+  border: none;
+  background: none;
+  color: blue;
+  font-size: 20px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=login_styles.css.map */
